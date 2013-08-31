@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'open_sansregular';
+  src: url("fonts/OpenSans-Regular-webfont.eot");
+  src: url("fonts/OpenSans-Regular-webfont.eot?#iefix") format('embedded-opentype'), url("fonts/OpenSans-Regular-webfont.woff") format('woff'), url("fonts/OpenSans-Regular-webfont.ttf") format('truetype'), url("fonts/OpenSans-Regular-webfont.svg#open_sansregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-size: 16px;
+  font-family: 'open_sansregular';
+  background: url("fondo.png");
+}
+#contenido {
+  background: -webkit-linear-gradient(top, #ccc, #fff);
+  background: -moz-linear-gradient(top, #ccc, #fff);
+  background: -o-linear-gradient(top, #ccc, #fff);
+  background: -ms-linear-gradient(top, #ccc, #fff);
+  background: linear-gradient(to bottom, #ccc, #fff);
+  border: 1px solid #666;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 1px #666;
+  box-shadow: 1px 1px 1px #666;
+  margin: 0.5em auto;
+  min-height: 500px;
+  text-align: justify;
+  width: 950px;
+}
+#contenido article {
+  float: left;
+}
+#contenido:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+#contenido1 {
+  padding: 1%;
+  width: 58%;
+}
+#contenido1 #imagenSvg {
+  float: left;
+  margin: 0 0.5em 0.5em 0;
+}
+#contenido2 {
+  margin-left: 3%;
+  padding: 1%;
+  width: 35%;
+}
+#contenido2 #imagenJpg {
+  float: left;
+  margin: 0 0.5em 0.5em 0;
+}
+#contenido2 #imagenJpg {
+  width: 150px;
+}
+@media screen and (max-width: 950px) {
+  #contenido {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #contenido article {
+    display: block;
+  }
+  #contenido1,
+  #contenido2 {
+    width: 100%;
+  }
+
+  #contenido2 {
+    margin-left: 0px;
+  }
+}
+

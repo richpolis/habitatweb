@@ -1,0 +1,78 @@
+box-shadow()
+    -webkit-box-shadow arguments
+    -moz-box-shadow arguments
+    box-shadow arguments
+    html.ie8 &,
+    html.ie7 &,
+    html.ie6 &
+      border 2px solid arguments[length(arguments) - 1]
+
+@import 'nib'
+
+@font-face
+    font-family 'open_sansregular'
+    src url('fonts/OpenSans-Regular-webfont.eot')
+    src url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
+        url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+        url('fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg')
+    font-weight normal
+    font-style normal
+
+body
+	font-size 16px
+	font-family 'open_sansregular'
+	background url('fondo.png')
+
+#contenido
+	background linear-gradient(top, #ccc,#fff)
+	border 1px solid #666
+	border-radius 5px
+	box-shadow 1px 1px 1px #666 
+	margin .5em auto
+	min-height 500px
+	text-align justify
+	width 950px
+
+#contenido article
+	float left
+
+#contenido:after
+	clear both
+	content ""
+	display block
+
+#contenido1
+	padding 1%
+	width 58%
+	& #imagenSvg
+		float left
+		margin 0 .5em .5em 0
+
+#contenido2
+	margin-left 3%
+	padding 1%
+	width 35%
+	& #imagenJpg
+		float left
+		margin 0 .5em .5em 0
+
+#contenido2 #imagenJpg
+	width 150px
+
+@media screen and (max-width 950px)
+    #contenido
+    	width 100%
+
+@media screen and (max-width 600px)
+    #contenido article
+    	display block
+
+    #contenido2
+		margin-left 0px
+
+	#contenido1
+    #contenido2
+    	width 100%
+
+

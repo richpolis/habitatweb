@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Prueba de Habitat Web</title>
+	<link rel="stylesheet" href="normalize.css"/>
+	<link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+	<div id="contenido">
+		<section id="contenedor">
+			<article id="contenido1">
+				<div id="imagenSvg"></div>
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, unde velit quam itaque nobis debitis odit reiciendis accusantium ab perferendis! Recusandae, cumque numquam at sequi doloremque consequatur sint odio assumenda.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, nulla, eaque, consequatur nesciunt dicta magni consectetur expedita sint accusamus cumque autem harum soluta laudantium provident iusto animi voluptates libero dolorum.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, eaque, dignissimos totam voluptates provident numquam velit repellat minima non unde officia eveniet molestiae quibusdam illum voluptas saepe repellendus quam harum?
+			</article>
+			<article id="contenido2">
+			    <img src="imagen.jpeg" alt="imagen" id="imagenJpg">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, iste adipisci beatae quae architecto voluptatem dignissimos a ut! Fuga, repellendus, ullam iusto necessitatibus tenetur ipsa nisi ab repudiandae veniam quod.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, magni, asperiores, mollitia, blanditiis laboriosam aliquam accusamus illo dignissimos modi repellat officia maxime nobis numquam voluptatem explicabo harum et sed commodi.
+			</article>
+	</section>	
+	</div>
+	<script src="raphael-min.js"></script>
+	<script>
+		var contenedor=document.getElementById("imagenSvg");
+
+		// Creates canvas 320 × 200 at 10, 50
+		var paper = Raphael(contenedor, 200, 200);
+
+		// Creates circle at x = 50, y = 40, with radius 10
+		var circle = paper.circle(100, 100, 100);
+		// Sets the fill attribute of the circle to red (#f00)
+		circle.attr("fill", "#f00");
+
+		// Sets the stroke attribute of the circle to white
+		circle.attr("stroke", "#fff");
+	</script>
+</body>
+</html>
