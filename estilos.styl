@@ -19,6 +19,9 @@ box-shadow()
     font-weight normal
     font-style normal
 
+article
+	min-height 200px
+
 body
 	font-size 16px
 	font-family 'open_sansregular'
@@ -29,50 +32,55 @@ body
 	border 1px solid #666
 	border-radius 5px
 	box-shadow 1px 1px 1px #666 
-	margin .5em auto
-	min-height 500px
+	margin .5em
 	text-align justify
-	width 950px
-
-#contenido article
-	float left
-
-#contenido:after
-	clear both
-	content ""
-	display block
+	width 100%
 
 #contenido1
 	padding 1%
-	width 58%
 	& #imagenSvg
 		float left
 		margin 0 .5em .5em 0
 
 #contenido2
-	margin-left 3%
 	padding 1%
-	width 35%
 	& #imagenJpg
 		float left
 		margin 0 .5em .5em 0
 
+#contenido1
+#contenido2
+	margin-bottom 15px
+
 #contenido2 #imagenJpg
 	width 150px
 
-@media screen and (max-width 950px)
-    #contenido
-    	width 100%
+@media screen and (min-width 600px)
+	#contenido article
+		display block
 
-@media screen and (max-width 600px)
-    #contenido article
-    	display block
-
-    #contenido2
+	#contenido2
 		margin-left 0px
 
 	#contenido1
-    #contenido2
-    	width 100%
+	#contenido2
+		width 98%
 
+@media screen and (min-width: 950px)
+	#contenido
+		margin .5em auto
+		min-height 500px
+		width 950px
 
+	#contenido:after
+		clear both
+		content ""
+		display block
+
+	#contenido1
+		float left
+		width 58%
+
+	#contenido2
+		float right
+		width 35%

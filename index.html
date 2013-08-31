@@ -2,7 +2,8 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" 
+	content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Prueba de Habitat Web</title>
 	<link rel="stylesheet" href="normalize.css"/>
 	<link rel="stylesheet" href="estilos.css"/>
@@ -16,6 +17,7 @@
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, unde velit quam itaque nobis debitis odit reiciendis accusantium ab perferendis! Recusandae, cumque numquam at sequi doloremque consequatur sint odio assumenda.
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, nulla, eaque, consequatur nesciunt dicta magni consectetur expedita sint accusamus cumque autem harum soluta laudantium provident iusto animi voluptates libero dolorum.
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, eaque, dignissimos totam voluptates provident numquam velit repellat minima non unde officia eveniet molestiae quibusdam illum voluptas saepe repellendus quam harum?
+				
 			</article>
 			<article id="contenido2">
 			    <img src="imagen.jpeg" alt="imagen" id="imagenJpg">
@@ -34,10 +36,19 @@
 		// Creates circle at x = 50, y = 40, with radius 10
 		var circle = paper.circle(100, 100, 100);
 		// Sets the fill attribute of the circle to red (#f00)
-		circle.attr("fill", "#f00");
+		circle.attr("fill", "rgb(53,167,91)");
 
 		// Sets the stroke attribute of the circle to white
-		circle.attr("stroke", "#fff");
+		//circle.attr("stroke", "#fff");
+
+		var ojo = paper.circle(100,70,20);
+
+		ojo.attr("fill","yellow");
+
+		var boca = paper.rect(100, 120, 50, 4, 10);
+
+		boca.attr("fill","yellow");
+
 	</script>
 </body>
 </html>
