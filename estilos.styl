@@ -1,23 +1,30 @@
-box-shadow()
-    -webkit-box-shadow arguments
-    -moz-box-shadow arguments
-    box-shadow arguments
-    html.ie8 &,
-    html.ie7 &,
-    html.ie6 &
-      border 2px solid arguments[length(arguments) - 1]
-
 @import 'nib'
 
 @font-face
     font-family 'open_sansregular'
     src url('fonts/OpenSans-Regular-webfont.eot')
-    src url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-        url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
-        url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+    src url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype')
+        url('fonts/OpenSans-Regular-webfont.woff') format('woff')
+        url('fonts/OpenSans-Regular-webfont.ttf') format('truetype')
         url('fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg')
-    font-weight normal
-    font-style normal
+	font-weight normal
+	font-style normal
+
+border-radius()
+	-webkit-border-radius arguments
+	-moz-border-radius arguments
+	-o-border-radius arguments
+	border-radius arguments
+
+box-shadow()
+	-webkit-box-shadow arguments
+	-moz-box-shadow arguments
+	-o-box-shadow arguments
+	box-shadow arguments
+	html.ie8 &,
+	html.ie7 &,
+	html.ie6 &
+		border 2px solid arguments[length(arguments) - 1]
 
 article
 	min-height 200px
@@ -32,7 +39,7 @@ body
 	border 1px solid #666
 	border-radius 5px
 	box-shadow 1px 1px 1px #666 
-	margin .5em
+	margin .5em 0
 	text-align justify
 	width 100%
 
@@ -56,6 +63,8 @@ body
 	width 150px
 
 @media screen and (min-width 600px)
+	#contenido
+		width 99%
 	#contenido article
 		display block
 
